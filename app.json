@@ -1,0 +1,38 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/serial/serial",
+    "pages/profile/profile"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "蛋人网",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#99aec9",
+    "selectedColor": "#fc577a",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "./assets/images/home.png",
+        "selectedIconPath": "./assets/images/home-selected.png"
+      },
+      {
+        "pagePath": "pages/serial/serial",
+        "text": "专题",
+        "iconPath": "./assets/images/serial.png",
+        "selectedIconPath": "./assets/images/serial-selected.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "./assets/images/profile.png",
+        "selectedIconPath": "./assets/images/profile-selected.png"
+      }
+    ]
+  }
+}
