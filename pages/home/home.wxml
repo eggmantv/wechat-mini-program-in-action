@@ -1,1 +1,1 @@
-<view class="title">hello {{username}}</view>
+<view class="title">{{recommended[0].showname}}</view>
