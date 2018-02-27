@@ -1,0 +1,3 @@
+<web-view wx:if="{{!!url}}" src="{{url}}" bindmessage="" />
+<!-- <text wx:elif="{{3 > 2}}">loading...</text>
+<text wx:else>loading...</text> -->

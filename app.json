@@ -3,7 +3,8 @@
     "pages/home/home",
     "pages/serial/serial",
     "pages/profile/profile",
-    "pages/lesson/lesson"
+    "pages/lesson/lesson",
+    "pages/read/read"
   ],
   "window":{
     "backgroundTextStyle":"light",
