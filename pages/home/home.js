@@ -46,4 +46,11 @@ Page({
   onPullDownRefresh: function() {
     wx.stopPullDownRefresh();
   },
+
+  onShareAppMessage: function() {
+    return {
+      title: "蛋人网",
+      path: "/pages/home/home?refer=share"
+    }
+  }
 })
