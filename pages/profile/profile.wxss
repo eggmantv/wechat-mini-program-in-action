@@ -1,0 +1,23 @@
+.profile-header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex: 1;
+  color: #354052;
+}
+
+.profile-actions {
+  margin-top: 50px;
+}
+.profile-btn {
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  background-color: #0288d1;
+  margin-bottom: 15px;
+  padding: 16px 0;
+}
+.profile-logout {
+  background-color: #e6eaee;
+  color: #707070;
+}

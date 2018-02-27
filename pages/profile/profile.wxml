@@ -1,1 +1,38 @@
-<view>profile</view>
+<view wx:if="{{!!user}}">
+  <view class="container profile-header">
+    你好，{{user.username}}
+  </view>
+
+  <view class="profile-actions">
+    <navigator
+      url="/pages/subscribe/subscribe?from=profile"
+      open-type="navigateTo"
+      hover-class="lesson-hover"
+      class="profile-btn">
+      订阅
+    </navigator>
+    <view class="profile-btn profile-logout" bindtap="logout">
+      退出登录
+    </view>
+  </view>
+</view>
+
+<!-- <view wx:elif="{{}}"></view> -->
+<view wx:else>
+  <view class="profile-actions">
+    <navigator
+      url="/pages/session/session?from=profile"
+      open-type="navigateTo"
+      hover-class="lesson-hover"
+      class="profile-btn profile-sub">
+      登录
+    </navigator>
+    <navigator
+      url="/pages/signup/signup?from=profile"
+      open-type="navigateTo"
+      hover-class="lesson-hover"
+      class="profile-btn profile-logout">
+      注册
+    </navigator>
+  </view>
+</view>

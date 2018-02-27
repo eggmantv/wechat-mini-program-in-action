@@ -1,0 +1,19 @@
+<view class="container">
+  <form bindsubmit="signup" >
+    <view class="user-input-row">
+      <input name="email" class="user-input-lg" placeholder="邮箱" focus />
+    </view>
+    <view class="user-input-row">
+      <input name="password" class="user-input-lg" placeholder="密码" password />
+    </view>
+    <view class="user-input-row">
+      <input name="password_confirmation" class="user-input-lg" placeholder="再次输入密码" password />
+    </view>
+    <view class="user-input-row">
+      <button class="user-login-btn" formType="submit">注册</button>
+    </view>
+    <view class="user-input-row">
+      <button class="user-login-btn user-signup-btn" bindtap="login">登录</button>
+    </view>
+  </form>
+</view>

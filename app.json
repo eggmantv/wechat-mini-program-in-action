@@ -5,7 +5,9 @@
     "pages/profile/profile",
     "pages/lesson/lesson",
     "pages/read/read",
-    "pages/player/player"
+    "pages/player/player",
+    "pages/session/session",
+    "pages/signup/signup"
   ],
   "window":{
     "navigationBarBackgroundColor": "#fff",
