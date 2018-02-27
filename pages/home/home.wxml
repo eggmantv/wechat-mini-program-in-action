@@ -26,4 +26,33 @@
       </swiper-item>
     </view>
   </swiper>
+
+  <view class="cards-list"
+    wx:key="{{id}}"
+    wx:for="{{serials}}"
+    wx:for-item="row">
+
+    <view class="card-title">
+      {{row[0]}}
+    </view>
+    <scroll-view scroll-x class="card-scroll-view">
+      <navigator class="one-card-thread"
+        wx:for="{{row[1]}}"
+        wx:key="id"
+        wx:for-item="serial"
+        url="/pages/lesson/lesson?id={{serial.id}}"
+        open-type="navigate"
+        hover-class="none">
+        
+        <view class="card-badge" style="background-color: {{serial.bg_color}}">{{serial.category.showname}}</view>
+        <view class="card-s-title">{{serial.showname}}</view>
+        <view class="card-s-info">
+          <rich-text>{{serial.short_info}}</rich-text>
+        </view>
+        <view class="card-time">{{helper.getDate(serial.updated_at)}}</view>
+        <view class="card-s-type">{{serial.level_to_show}}</view>
+      </navigator>
+    </scroll-view>
+  </view>
+
 </view>
