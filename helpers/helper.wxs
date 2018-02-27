@@ -1,0 +1,9 @@
+module.exports = {
+  getSerialCategoryTitle: function(title) {
+    return title.replace('c-', '');
+  },
+
+  getDate: function(dateString) {
+    return dateString.split('T')[0];
+  }
+}

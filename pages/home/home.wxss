@@ -1,4 +1,114 @@
-.title {
-  color: red;
+/* swiper */
+.swiper-container {
+  background-color: #0288d1;
+  padding: 20px 15px;
+  padding-bottom: 10px;
+}
+.swiper-item {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  padding-bottom: 30px;
+}
+.swiper-left {
+  display: flex;
+  flex: 1;
+}
+.swiper-right {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+}
+.swiper-icon {
+  width: 100px;
+  height: 100px;
+}
+.swiper-title {
   font-size: 18px;
+  font-weight: 500;
+}
+.swiper-info {
+  font-size: 14px;
+  padding: 15px 0;
+  height: 42px;
+  overflow: hidden;
+}
+
+/* cards */
+.cards-list {
+  font-size: 14px;
+}
+.card-title {
+  margin: 15px 15px;
+  margin-top: 20px;
+  color: #99aec9;
+  font-size: 16px;
+}
+.card-scroll-view {
+  white-space: nowrap;
+}
+.one-card-thread {
+  display: inline-block;
+  width: 200px;
+  overflow: hidden;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  /* border: 1px solid #e6eaee; */
+  padding: 15px;
+  box-shadow: 0 0 8px #e6eaee;
+  position: relative;
+}
+.one-card-thread:first-child {
+  margin-left: 15px;
+}
+.card-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 3px 5px;
+  color: white;
+  font-size: 13px;
+}
+.card-s-title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: 500;
+  margin-top: 16px;
+  font-size: 16px;
+}
+.card-s-info {
+  color: #707070;
+  margin: 15px 0 15px 0;
+  height: 35px;
+  white-space: normal;
+  overflow: hidden;
+  font-size: 15px;
+  line-height: 18px;
+}
+.card-s-type {
+  color: #7f8fa4;
+}
+.card-time {
+  float: right;
+  color: #7f8fa4;
+}
+
+/* latest */
+.latest-list {
+  padding-bottom: 10px;
+}
+.latest-one {
+  color: #707070;
+  padding: 15px;
+  border-bottom: 1px solid #e6eaee;
+  font-size: 15px;
+}
+.latest-one:last-child {
+  border-bottom: 0;
+}
+.latest-time {
+  float: right;
+  color: #7f8fa4;
+  font-size: 13px;
 }

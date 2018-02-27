@@ -1,1 +1,29 @@
-<view class="title">{{recommended[0].showname}}</view>
+<wxs src="../../helpers/helper.wxs" module="helper" />
+
+<view>
+  <swiper class="swiper-container"
+    indicator-dots="{{true}}"
+    indicator-active-color="white"
+    autoplay="{{true}}"
+    interval="{{4000}}"
+    duration="{{500}}"
+    circular="{{true}}">
+    <view wx:for="{{recommended}}" wx:key="id">
+      <swiper-item>
+        <navigator class="swiper-item"
+          url="/pages/lesson/lesson?id={{item.id}}"
+          open-type="navigate"
+          hover-class="none"
+          >
+          <view class="swiper-left">
+            <image class="swiper-icon" src="../../assets/images/v5/{{helper.getSerialCategoryTitle(item.category.title)}}@3x.png" />
+          </view>
+          <view class="swiper-right">
+            <view class="swiper-title">{{item.showname}}</view>
+            <view class="swiper-info">{{item.short_info}}</view>
+          </view>
+        </navigator>
+      </swiper-item>
+    </view>
+  </swiper>
+</view>

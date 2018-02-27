@@ -1,10 +1,120 @@
-/**app.wxss**/
 .container {
-  height: 100%;
+  font-size: 14px;
+  margin: 15px;
+}
+.flex-row-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex: 1;
   align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
-} 
+}
+.flex-left {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+}
+.flex-right {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+/* 专题卡片 */
+.one-serial {
+  padding: 20px;
+  border: 1px solid #e6eaee;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+.one-serial:first-child {
+  margin-top: 15px;
+}
+.serial-title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 16px;
+  color: #354052;
+  font-weight: 500;
+}
+.serial-info {
+  height: 55px;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 20px 0;
+  color: #707070;
+}
+.serial-tag {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  margin-top: 20px;
+  font-size: 14px;
+  align-items: center;
+}
+.serial-tag-level {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+}
+.serial-tag-type {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+.serial-badge {
+  padding: 4px;
+  background-color: #8dc2e4;
+  border-radius: 4px;
+  width: 18px;
+  height: 18px;
+}
+
+/* lesson row */
+.lessons-list {
+  padding-bottom: 50px;
+  font-size: 14px;
+}
+.lesson-row {
+  padding: 20px 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.lesson-parent-title {
+  background-color: #f8fafc;
+  color: #6782a4;
+  font-weight: 500;
+  border: 1px solid #e6eaee;
+}
+.lesson-child-title {
+
+}
+.lesson-duration {
+  color: #aaa;
+  font-size: 14px;
+}
+.lesson-hover {
+  background-color: #f8fafc;
+}
+
+/* session & signup */
+.user-input-row {
+  margin-bottom: 15px;
+}
+.user-input-lg {
+  padding: 12px 6px;
+  font-size: 14px;
+  border-bottom: 1px solid #e6eaee;
+}
+.user-login-btn {
+  border: 0;
+  margin-top: 40px;
+  background-color: #0288d1;
+  color: white;
+}
+.user-signup-btn {
+  color: #707070;
+  background-color: #e6eaee;
+}
