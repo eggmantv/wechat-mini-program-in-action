@@ -1,0 +1,25 @@
+<import src="../../templates/lesson.wxml" />
+
+<view class="container">
+  <view class="s-serial-info">
+    <view class="s-title">{{serial.showname}}</view>
+    <view class="s-info"><rich-text>{{serial.info}}</rich-text></view>
+  </view>
+
+  <view class="lessons-list">
+    <template is="parent"
+      wx:for="{{lessons}}"
+      wx:key="id"
+      wx:for-item="lesson"
+      data="{{lesson: lesson, navOpenType: 'navigateTo'}}" />
+  </view>
+
+  <view class="start-learn">
+    <view class="learn-btn"
+      hidden="{{hideLearnBtn}}"
+      data-lesson-id="{{firstLessonID}}"
+      bindtap="startLearnClick">
+      开始学习
+    </view>
+  </view>
+</view>

@@ -2,7 +2,8 @@
   "pages":[
     "pages/home/home",
     "pages/serial/serial",
-    "pages/profile/profile"
+    "pages/profile/profile",
+    "pages/lesson/lesson"
   ],
   "window":{
     "backgroundTextStyle":"light",

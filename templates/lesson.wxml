@@ -1,0 +1,41 @@
+<wxs module="hp">
+module.exports = {
+  lessonPath: function(lesson) {
+    return lesson.lesson_type === 'video' ?
+      "/pages/player/player?id=" + lesson.url_name :
+      "/pages/read/read?id=" + lesson.id;
+  }
+}
+</wxs>
+
+<template name="parent">
+  <view class="one-parent-list">
+    <view class="lesson-row lesson-parent-title">{{lesson.title}}</view>
+
+    <view class="sub-lessons">
+      <template is="child"
+        wx:for="{{lesson.sub_lessons}}"
+        wx:key="id"
+        wx:for-item="sub_lesson"
+        data="{{sub_lesson, navOpenType}}" />
+    </view>
+  </view>
+</template>
+
+<template name="child">
+  <view class="one-lesson">
+    <navigator
+      id="l-{{sub_lesson.id}}"
+      url="{{hp.lessonPath(sub_lesson)}}"
+      open-type="{{navOpenType}}"
+      hover-class="lesson-hover"
+      class="flex-row-container lesson-row lesson-child-title">
+      <view class="flex-left">
+        {{sub_lesson.sub_title.length > 0 ? sub_lesson.sub_title : sub_lesson.title}}
+      </view>
+      <view class="flex-right lesson-duration">
+        {{sub_lesson.duration}}
+      </view>
+    </navigator>
+  </view>
+</template>
