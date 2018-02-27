@@ -1,0 +1,28 @@
+<view class="container">
+  <view class="sub-thread">
+    <view class="sub-title">{{quarter.product_name}}</view>
+    <view class="sub-price">{{quarter.total_money}}元/季度</view>
+    <view class="sub-pros">
+      <text class="sub-pro">观看免费内容</text>
+      <text class="sub-pro">观看付费内容</text>
+      <text class="sub-pro">源码以及PPT访问权限</text>
+      <text class="sub-pro sub-no-access">课件视频下载</text>
+      <text class="sub-pro sub-no-access">Slack专属频道技术支持</text>
+    </view>
+    <view class="sub-btn" data-product="quarter" bindtap="purchase">订阅</view>
+  </view>
+  
+  <view class="sub-thread">
+    <view class="sub-title">{{year.product_name}}</view>
+    <view class="sub-save">{{year.product_name}}「节省 ¥194」</view>
+    <view class="sub-price">{{year.total_money}}元/年</view>
+    <view class="sub-pros">
+      <text class="sub-pro">观看免费内容</text>
+      <text class="sub-pro">观看付费内容</text>
+      <text class="sub-pro">源码以及PPT访问权限</text>
+      <text class="sub-pro">课件视频下载</text>
+      <text class="sub-pro">Slack专属频道技术支持</text>
+    </view>
+    <view class="sub-btn" data-product="year" bindtap="purchase">订阅</view>
+  </view>
+</view>

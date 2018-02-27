@@ -1,0 +1,41 @@
+.sub-thread {
+  text-align: center;
+  box-shadow: 0 0 20px #ddd;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  padding-top: 25px;
+}
+.sub-title {
+  font-size: 20px;
+  padding: 5px;
+}
+.sub-save {
+  color: #0288d1;
+  padding: 5px;
+}
+.sub-price {
+  color: #0288d1;
+  font-size: 24px;
+}
+.sub-pros {
+  padding-top: 20px;
+}
+.sub-pro {
+  font-size: 14px;
+  color: #354052;
+  display: block;
+  padding: 5px 0;
+}
+.sub-no-access {
+  color: #e6eaee;
+}
+.sub-btn {
+  margin-top: 25px;
+  padding: 18px 0;
+  font-size: 16px;
+  color: white;
+  background-color: #0288d1;
+  font-weight: 600;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
