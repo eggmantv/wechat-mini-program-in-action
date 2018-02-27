@@ -14,6 +14,9 @@
     <view class="profile-btn profile-logout" bindtap="logout">
       退出登录
     </view>
+    <view class="profile-btn profile-logout" bindtap="eventNotify">
+      事件通知测试
+    </view>
   </view>
 </view>
 

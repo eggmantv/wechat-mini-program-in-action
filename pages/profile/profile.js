@@ -1,4 +1,5 @@
 const app = getApp();
+const { EventCenter, EVENT_PAY_SUCCESS } = require('../../event_center');
 
 Page({
   data: {
@@ -55,5 +56,9 @@ Page({
       }
     })
   },
+
+  eventNotify: function(e) {
+    EventCenter.dispatchEvent(EVENT_PAY_SUCCESS);
+  }
 
 })

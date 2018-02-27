@@ -1,4 +1,5 @@
 const app = getApp();
+const { EventCenter, EVENT_PAY_SUCCESS } = require('../../event_center');
 
 Page({
   data: {
@@ -8,6 +9,10 @@ Page({
   },
 
   onLoad: function(options) {
+    EventCenter.addEventListener(EVENT_PAY_SUCCESS, this.route, () => {
+      wx.showToast({title: "home 支付事件回调"});
+    })
+
     wx.showLoading({title: "加载中..", mask: true});
     wx.request({
       url: app.config.API_URL + "/mapi/lessons/mp_home",
@@ -26,6 +31,10 @@ Page({
         wx.hideLoading();
       }
     })
+  },
+
+  onUnload: function() {
+    EventCenter.removeEventListener(EVENT_PAY_SUCCESS, this.route);
   },
 
   latestLessonTap: function(e) {
