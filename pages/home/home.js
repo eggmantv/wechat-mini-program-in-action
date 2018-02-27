@@ -32,5 +32,9 @@ Page({
     wx.navigateTo({
       url: `/pages/lesson/lesson?id=${e.currentTarget.dataset.lessonSlug}`
     })
-  }
+  },
+
+  onPullDownRefresh: function() {
+    wx.stopPullDownRefresh();
+  },
 })

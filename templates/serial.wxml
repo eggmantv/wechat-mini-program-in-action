@@ -1,0 +1,15 @@
+<template name="serial">
+  <view id="'serial_'{{serial.id}}" class="one-serial" bindtap="openSerial" data-serial-id="{{serial.id}}">
+    <view class="serial-title">
+      <text>{{serial.showname}}</text>
+    </view>
+    <view class="serial-info">
+      <text>{{serial.short_info}}</text>
+    </view>
+    <view class="serial-tag">
+      <view class="serial-tag-level">{{serial.level_to_show}}</view>
+      <view class="serial-tag-type"><image class="serial-badge"
+      src="../../assets/images/v5/{{serial.lesson_type}}@2x.png" /></view>
+    </view>
+  </view>
+</template>

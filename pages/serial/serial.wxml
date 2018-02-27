@@ -1,1 +1,9 @@
-<view>serial</view>
+<import src="../../templates/serial.wxml" />
+
+<view class="container {{page === -1 ? '' : 'serials-page-list'}}">
+  <template is="serial"
+    wx:for="{{serials}}"
+    wx:key="id"
+    wx:for-item="serial"
+    data="{{serial}}" />
+</view>
