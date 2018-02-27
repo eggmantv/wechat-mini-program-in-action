@@ -43,7 +43,7 @@
         url="/pages/lesson/lesson?id={{serial.id}}"
         open-type="navigate"
         hover-class="none">
-        
+
         <view class="card-badge" style="background-color: {{serial.bg_color}}">{{serial.category.showname}}</view>
         <view class="card-s-title">{{serial.showname}}</view>
         <view class="card-s-info">
@@ -53,6 +53,24 @@
         <view class="card-s-type">{{serial.level_to_show}}</view>
       </navigator>
     </scroll-view>
+  </view>
+
+  <view class="cards-list">
+    <view class="card-title">
+      最新更新
+    </view>
+
+    <view class="latest-list">
+      <view class="latest-one"
+        bindtap="latestLessonTap"
+        data-lesson-slug="{{lesson.url_name}}"
+        wx:for="{{latest}}"
+        wx:key="{{url_name}}"
+        wx:for-item="lesson">
+        <view class="latest-time">{{helper.getDate(lesson.created_at)}}</view>
+        <view>{{lesson.title}}</view>
+      </view>
+    </view>
   </view>
 
 </view>

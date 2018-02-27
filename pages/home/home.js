@@ -26,5 +26,11 @@ Page({
         wx.hideLoading();
       }
     })
+  },
+
+  latestLessonTap: function(e) {
+    wx.navigateTo({
+      url: `/pages/lesson/lesson?id=${e.currentTarget.dataset.lessonSlug}`
+    })
   }
 })
