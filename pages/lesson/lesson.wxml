@@ -1,5 +1,6 @@
 <import src="../../templates/lesson.wxml" />
 
+<!-- <include src="../../templates/single.wxml" /> -->
 <view class="container">
   <view class="s-serial-info">
     <view class="s-title">{{serial.showname}}</view>
