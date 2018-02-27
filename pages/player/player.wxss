@@ -1,0 +1,7 @@
+.video_player {
+  width: 100%;
+}
+.lessons-list {
+  margin-top: -5px;
+  padding-bottom: 0;
+}

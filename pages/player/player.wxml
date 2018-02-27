@@ -1,0 +1,24 @@
+<import src="../../templates/lesson.wxml" />
+
+<view>
+  <video id="player" class="video_player"
+    src="{{video_url}}"
+    initial-time="{{playing_record.duration}}"
+    autoplay="{{false}}"
+    loop="{{false}}"
+    poster="{{video_poster}}"
+    controls
+    bindplay="onVideoPlay" />
+
+  <scroll-view scroll-y
+    scroll-with-animation="{{true}}"
+    scroll-into-view="l-{{lesson.id}}"
+    class="lessons-list"
+    style="height: {{scrollViewHeight}}px;">
+    <template is="parent"
+      wx:for="{{lessons}}"
+      wx:key="id"
+      wx:for-item="lesson"
+      data="{{lesson: lesson, navOpenType: 'redirectTo'}}" />
+  </scroll-view>
+</view>

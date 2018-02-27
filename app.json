@@ -4,7 +4,8 @@
     "pages/serial/serial",
     "pages/profile/profile",
     "pages/lesson/lesson",
-    "pages/read/read"
+    "pages/read/read",
+    "pages/player/player"
   ],
   "window":{
     "backgroundTextStyle":"light",
